@@ -1,0 +1,33 @@
+body{
+    background-image:  url('/img/bus2.jpeg');
+}
+
+
+section{
+    padding: 23rem;
+
+    max-width: 1200px;
+    text-align: center;
+
+}
+.sec {
+    font-size: large;
+   color: white;
+   padding-top: 200px;
+
+}
+.sec .p{
+   
+    margin-top: 20px;
+ margin-bottom: 40px;
+
+}
+
+.sec .b button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(233, 60, 60);
+}

@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Books</title>
+        <title>BUS</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -45,27 +45,34 @@
 <body>
 
 <div class="container">
-    <form action="">
-        <div class="row">
+    <form action="/home" method="POST" enctype="multipart/form-data" >
+    @csrf 
+    <div class="row">
         <div class="col">
              <center>    <h3 class="title">IMPORTANT!</h3></center>
                  <div class="impotant">
               <center>  
                 <h2>    Before Buying Tickets. Please have a look >> <a href="">How to book?</a></h2>
               </center>
+
+                 </div>
+                 <div class="inputBox">
+                     
+                     <input type="hidden" placeholder=""  name="username" id="username" value="{{ Auth::user()->name  }}">
+                     <input type="hidden" placeholder=""  name="userid" id="userid" value="{{ Auth::user()->id  }}">
                  </div>
 
                  <div class="inputBox">
                      <span>Select Date </span>
-                     <input type="text" placeholder="day/month/year">
+                     <input type="text" name="date" id="date" placeholder="day/month/year">
                  </div>
                  <div class="inputBox">
                      <span>Origin </span>
-                      <input type="text" placeholder="Choose Orgin">
+                      <input type="text" id="origin"  name="origin" placeholder="Choose Orgin">
                  </div>
                   <div class="inputBox">
                      <span>Destination</span>
-                      <input type="text" placeholder="Choose Desination">
+                      <input type="text" id="destination" name="destination" placeholder="Choose Desination">
                  </div>
                  
 
@@ -74,19 +81,18 @@
                </div>
      
 
-             <input type="submit" value="Search" class="submit-btn" >
+             <input type="submit"name="submit"  value="Search" class="submit-btn" >
   </form>
   </div>
  
  
 
-   <div class="table">
-    
-   </div>
-         
-          </div>
-
     </body>
+
+
+ 
+  </div>
+
 </section>
        </footer>
     </body>

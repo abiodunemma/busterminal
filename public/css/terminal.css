@@ -1,0 +1,56 @@
+body{
+    background-color: gray;
+}
+
+.container{
+    background-color: snow;
+    border: 1px solid snow;
+margin-left: 200px;
+    width: 50%;
+    height: 200px;
+   position: center;
+   margin-top: 300px;
+
+}
+
+.container button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: red;
+}
+.container .local{
+
+background-color: lightyellow;
+
+
+}
+
+.container .local .full{
+    margin-top: 30px;
+    background-color: gray;
+
+}
+
+
+.container .local .full .flex{
+    margin-top: 30px;
+    background-color: black;
+
+}
+
+
+.container .local .full table, tr, th, h3{
+    border: 1px solid white;
+    border-spacing: 15px;
+    border-collapse: collapse;
+    }
+
+.container .local .full table, th, td{
+   
+border: 1px solid gray;
+padding: 5px;
+border-collapse: collapse;
+}

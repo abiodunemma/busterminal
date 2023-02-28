@@ -1,0 +1,48 @@
+body{
+    background-color: gray;
+}
+.ticket{
+    background-color: lightgrey;
+    justify-content: center;
+    margin-top: 30px;
+    
+    width: 100%;
+    margin-left: 50px;
+   
+}
+.ticket .des{
+    
+    background-color: whitesmoke;
+    margin-top: 29px;
+}
+.ticket h2{
+    font-weight: 1003;
+justify-self: center;
+}
+.seat{
+    background-color: whitesmoke;
+    width: 300px;
+    margin-left: 40px;
+
+    margin-top: 3000px;
+    padding: 2rem;
+  margin-top: 200px;
+    max-width: 1200px;
+
+}
+
+.seat .fish .checkbox{
+padding: 200px;
+}
+.seat .fish{
+    background-color: lightgrey;
+    justify-content: center;
+}
+.seat .fish button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(92, 92, 235);
+}

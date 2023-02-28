@@ -9,7 +9,7 @@
     }
     .container{
          display:flex;
-         justify-content: left;
+         justify-content: center;
          align-items: center;
          padding:25px;
          min-height: 100vh;
@@ -17,19 +17,7 @@
 
         padding-bottom:70px;
         }
-        .container .table th td{
-            display:flex;
-            justify-content: right;
-            align-items: center;
-            padding:25px;
-            min-height: 100vh;
-            background-color: grey;
-            border: 1px solid black;
-            border-collapse: collapse;
-
    
-           padding-bottom:70px;
-           }
 
         .container form{
                 padding:20px;
@@ -37,6 +25,19 @@
                 background: #fff;
                 box-shadow: 0 5ox 10px rgba(0,0,0,.1);
         }
+
+        
+    
+        
+        .container .flex{
+            padding:20px;
+            justify-content: right;
+            align-items: center;
+            width: 500px;
+            background: #fff;
+            box-shadow: 0 5ox 10px rgba(0,0,0,.1);
+    }
+
   
         .container form .row{
             display: flex;
@@ -105,4 +106,14 @@
             color: #fff;
             margin-top:5px;
             cursor: pointer;
+        }
+
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+from { -webkit-transform: scale(0) }
+to {-webkit-transform: scale(1)}
         }

@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('Bus/terminal/', [App\Http\Controllers\BusController::class, 'show'])->middleware(('auth'));
+Route::post('Bus/detail', [App\Http\Controllers\seatController::class, 'store'])->middleware(('auth'));
+
+Route::get('Bus/detail', [App\Http\Controllers\BusController::class, 'detail'])->middleware(('auth'));
+Route::post('/home', [App\Http\Controllers\BusController::class, 'store'])->middleware(('auth'));
+
 
 
 

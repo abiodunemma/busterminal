@@ -1,0 +1,362 @@
+:root{
+    --main-color: rgb(77, 234, 77);
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black: #2c3e50;
+    --border:.1rem solid rgba(0,0,0,.3);
+    --box-shodow:0 .5rem 1rem rgba(0,0,0, .1);
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing:  none; border: none;
+    text-decoration: none;
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+
+}
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--light-bg);
+}
+
+section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading{
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.empty{
+    background-color:  var(--white);
+    border: var(--border);
+    box-shadow: var(--border-shodow);
+    color:var(--red);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    text-align: center;
+    width:  100%;
+    border-radius: .5rem;
+}
+.btn,
+.delete-btn{
+    display: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    text-transform:  capitalize;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn{
+    background-color: rgb(77, 235, 77);
+}
+
+.delete-btn{
+    background-color: var(--red);
+}
+
+.btn:hover,
+.delete-btn:hover{
+    background-color: var(--black);
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color:  var(--black);
+    z-index: 1000;
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between; 
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.header .flex .navbar a{
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-left: 2rem;
+    text-transform:  capitalize;
+}
+
+.header .flex .navbar a:hover{
+   text-decoration: underline; 
+}
+
+.header .flex .navbar a span{
+    padding: .2rem .5rem;
+    background-color:  var(--white);
+    color: var(--black);
+    margin-left:  .5rem;
+    border-radius:  .5rem;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+.add-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15rem);
+}
+
+.add-product form{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shodow);
+    width: 50rem;
+}
+
+.add-product form h3{
+    text-transform: capitalize;
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.add-product form .box{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius:  .5rem;
+      background-color:  var(--light-bg);
+    font-size: 1.8rem;
+    color:  var(--black);
+    width: 100%;
+}
+
+
+.add-product form .ab{
+    margin: 1rem 0;
+    padding: 05rem 0;
+    border-radius:  .5rem;
+    background-color:  var(--light-bg);
+    text-align:start;
+    font-size: 1.8rem;
+    color:  var(--black);
+    width: 100%;
+}
+
+.add-product form p{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.add-product form p span{
+    color: var(--red);
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+ }
+
+ .products .box-container .box{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shodow);
+
+ }
+
+ .products .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+ }
+
+ .products .box-container .box .sub-total{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+ }
+
+ .products .box-container .box .name{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    padding:  .5rem 0;
+ }
+
+.products .box-container .box .flex{
+    display: flex;
+    align-items:  center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.products .box-container .box .flex .price{
+    font-size: 1.8rem;
+    color:var(--red);
+    margin-right:  auto;
+}
+
+.products .box-container .box .flex .qty{
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: .5rem 1rem;
+    border: var(--border);
+    border-radius: .5rem;;
+    width: 6.5rem;
+}
+.products .grand-total{
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.products .grand-total p{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.products .grand-total p span{
+    color:var(--red);
+}
+
+
+
+
+.checkout .row form{
+    background-color: var(--white);
+    box-shadow: var(--border-shodow);
+    border:var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+     font-size: 55%;
+    } 
+ }
+ 
+ 
+ @media (max-width: 768px) {
+ #menu-btn{
+     display: inline-block;
+ }
+ 
+ .header .navbar{
+     position: absolute;
+     top: 99%; left: 0; right: 0;
+     padding: 1rem ;
+     background-color:  var(--black);
+     border-top: .1rem solid rgba(255, 255, 255,.2);
+     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     transform:  .2s linear;
+ 
+ }
+ 
+ .header .navbar .active{
+     clip-path: polygon(0 0, 100% 100%, 0 100%);
+ }
+ 
+ .header .navbar a{
+     display: block;
+     margin: 1rem 0;
+     padding:  .5rem 0;
+ }
+ }
+ 
+ @media (max-width:450px) {
+
+     html{
+         font-size:  50%;
+     }
+
+     .products .box-container{
+        grid-template-columns: 1fr;
+     }
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

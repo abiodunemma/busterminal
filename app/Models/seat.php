@@ -11,5 +11,6 @@ class seat extends Model
     protected $table = 'seats';
 
     protected $primaryKey = 'id';
-    protected $fillable = [ 'username','userid',  'marks'];
+    protected $fillable = [ 'username','userid', 'number'];
+
 }

@@ -29,33 +29,39 @@
     <div class="fish">
     <input type="hidden" placeholder=""  name="username" id="username" value="{{ Auth::user()->name  }}">
     <input type="hidden" placeholder=""  name="userid" id="userid" value="{{ Auth::user()->id  }}">
-   
-    <input type="checkbox" name="marks[]" value="1">1
-       <input type="checkbox" name="marks[]" value="2">2</br>
-       <input type="checkbox" name="marks[]" value="3">3
-       <input type="checkbox" name="marks[]" value="4">4</br>
-       <input type="checkbox" name="marks[]" value="5">5
-       <input type="checkbox" name="marks[]" value="6">6</br>
-       <input type="checkbox" name="marks[]" value="7">7
-       <input type="checkbox" name="marks[]" value="8">8</br>
-       <input type="checkbox" name="marks[]" value="9">9
-       <input type="checkbox" name="marks[]" value="10">10</br>
-       <input type="checkbox" name="marks[]" value="11">11
-       <input type="checkbox" name="marks[]" value="12">12</br>
-       <input type="checkbox" name="marks[]" value="13">13
-       <input type="checkbox" name="marks[]" value="14">14</br>
-       <input type="checkbox" name="marks[]" value="15">15
-       <input type="checkbox" name="marks[]" value="16">16</br>
-       <input type="checkbox" name="marks[]" value="17">17
-       <input type="checkbox" name="marks[]" value="18">18</br>
-       <input type="checkbox" name="marks[]" value="19">19
-       <input type="checkbox" name="marks[]" value="20">20</br>
-       <input type="checkbox" name="marks[]" value="21">21
-       <input type="checkbox" name="marks[]" value="22">22</br>
-       <input type="checkbox" name="marks[]" value="23">23
-      <a href=""> <button>Driver's Seat</button></a>
+    <select name="number" id="number"  required>
+        <h3>pick your seat</h3>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+</option>
+   </select>
+     
+  <button> <input type="submit" value="Book your sit Now!" ></button>
+
+     
  <li>       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>   After picking a seat click the next button
-   <input type="submit" value="Book your sit Now!" class="btn">
+
 
     </div>
 </div>

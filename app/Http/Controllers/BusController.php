@@ -28,7 +28,7 @@ return view('Bus.terminal', compact('data'));
 
     public function show(){
 
-        
+    
         $data= Bus::all();
  
         return view('Bus.terminal', compact('data'));
@@ -36,12 +36,6 @@ return view('Bus.terminal', compact('data'));
     }
 
 
-    public function detail(){
-       
-        return view('Bus.detail'); 
-        
-    
-    }
 
     
         
